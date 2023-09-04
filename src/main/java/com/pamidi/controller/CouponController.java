@@ -31,6 +31,7 @@ public class CouponController {
 	@GetMapping(value = "/coupons/{code}")
 	public Coupon getCoupon(@PathVariable(name = "code") String code) {
 		return service.getCoupons(code);
+		
 	}
 	
 	@GetMapping(value="/coupons/all/{code}")
